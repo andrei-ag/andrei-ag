@@ -26,7 +26,6 @@
 
 ## 📝 **Публикации**  
 UinC.ru, WASM.ru. Архив статей: [andrei-ag.github.io](https://andrei-ag.github.io/)
-### 📜 Certifications & Background
 
 ### 📜 **Сертификаты**
 - **MCSE: SQL Server** (Microsoft Certified Solutions Expert)
