@@ -1,37 +1,64 @@
-## **SysOp → Reverse Engineer → 1С Architect**
+## **Defense Systems Engineer (2001) → 1С Architect (2004 → now)**
 
-Привет, я Андрей. Я писал антивирус на ассемблере и компилятор языка C для DOS. 
-Сейчас я строю системы бюджетирования и управленческого учета на 1С и MS SQL.
+Начинал с разработки для корабельных арткомплексов (оборонная промышленность). Сейчас строю системы бюджетирования и управленческого учета на 1С и MS SQL. В качестве хобби написал компилятор на C (DOS) и антивирус на ассемблере (WIN32).
 
-💡 **Что во мне уникального:**  
-Я понимаю компьютеры с нуля — от регистров процессора до SQL-запросов. Мои старые проекты (и они живые!) это доказывают.
+💡 Я понимаю компьютеры от регистров процессора до SQL-запросов. Старые проекты это показывают — можете проверить, они в открытом доступе 🙂
 
-## 🔻 **Мои проекты**
+## 📦 **Мои проекты**
 
-### 🦠 **Explosion Antivirus** (2004 → 2009) — мой антивирус на FASM
+### 🦠 **Explosion Antivirus** (2004 → 2009) — антивирус (FASM, WIN32)
+- С нуля полностью на ассемблере
+- Модульная архитектура (редкость для ASM-проектов)
 - Эмулятор x86 (~100 инструкций, MMX, FPU)
-- Детектирует сложнейший полиморфный Win32/Driller (Tuareg)
-- Лечит Parite, Funlove, Marburg
+- Детектирует полиморфный Win32/Driller (Tuareg) и др.
+- Лечит Parite, Funlove, Marburg и др.
 → [github.com/andrei-ag/xpl_av](https://github.com/andrei-ag/xpl_av)
 
-### 📜 **Maximus Script Language** (2001) — компилятор для автоматизации BBS (C, DOS)
+### 📜 **Maximus Script Language** (2001) — компилятор для BBS (C, DOS)
 - Лексический/синтаксический анализатор, управляющие конструкции
 - Работа с файлами, строками, CRC32
 → [github.com/andrei-ag/MaximusSL](https://github.com/andrei-ag/MaximusSL)
 
-### 🏗️ **Текущая архитектура 1С** (2004 → Сейчас)
-- Проект «Бюджетирование Т Плюс» — [премия «1С:Проект года» /ТЭК/](https://eawards.1c.ru/projects/sozdanie-centralizovannoy-sistemy-upravleniya-finansami-sbytovogo-segmenta-gruppy-kompaniy-t-plyus--59255/)
-- Снял лимит аналитик в УХ 1.3 (5 → ∞) и БИТ Финанс (7 → ∞)
-- Аналог [MS Project Server на 1С](https://erp-performance.ru/project-performance/about-pp/) (оборонные предприятия, 100+ пользователей)
+### 🎯 **СУПРА** — Система Управления Приоритетами РАбот (2026 → now) [личный проект]
+
+Расширение для конфигураций на базе [1С:БСП](https://v8.1c.ru/tekhnologii/standartnye-biblioteki/1s-biblioteka-standartnykh-podsistem/). Режим совместимости: Версия 8.3.26
+
+Открытая система управления проектами, вдохновленная:
+- **Jira/Agile** — гибкая методология, бэклог, спринты, полностью настраиваемая доска задач.
+- **Приоритет = позиция в списке** — подход, реализуемый в MS Project через настройку "Leveling order = ID ONLY" (приоритет задачи определяется её порядковым номером в бэклоге, а не абстрактным числом). → [gaperton.livejournal.com](https://gaperton.livejournal.com/19205.html)
+- **Режим реального времени** — инкрементальный пересчёт **дат старта и окончания задач** по графу зависимостей. Асинхронно, без дополнительного нажатия кнопок и без блокировок интерфейса и задач. Исполнители при этом **работают как обычно**: меняют статусы, трудоёмкость, атрибуты, вносят отчеты о работах — всё доступно.
+- **Два режима загрузки ресурсов:** исполнитель может работать только над одной задачей в единицу времени (исключает параллельные назначения) — либо без этого ограничения.
+
+**🔒 Лицензия:** AGPLv3 — код открыт для использования, модификации и изучения.
+
+💡 *Проект развивается в свободное время как личная инициатива.*
+
+🤝 Приглашаю к участию: форки, пул-реквесты, идеи. Вместе мы можем создать лучшее и самое быстрое решение по планированию на 1С.
+
+👉 [github.com/andrei-ag/supra](https://github.com/andrei-ag/supra)
+
+> 💡 ИТ-проектам нужен простой и мощный инструмент планирования. Поэтому СУПРА бесплатна. Навсегда.
+>
+> 🕊️ Чтобы в задачах было меньше спешки, а у команд — больше спокойствия.  
+> ➡️ Чёткий план → предсказуемые сроки → меньше кранчей → больше качества.
+
+### 🏗️ **Архитектура 1С** (2004 → present)
+- **Бюджетирование Т Плюс** (УХ 1.3) — премия «1С:Проект года» (ТЭК)
+  - Снял лимит аналитик: 5 → ∞
+  - Переписал механизм расчета зависимых показателей: цикл → одноитерационный расчет по графам зависимостей. **Итог**: Ускорение расчета мастер бюджетов > 3 раз.
+  → [eawards.1c.ru](https://eawards.1c.ru/projects/sozdanie-centralizovannoy-sistemy-upravleniya-finansami-sbytovogo-segmenta-gruppy-kompaniy-t-plyus--59255/)
+- **Аналог MS Project Server на 1С** (оборонные предприятия, 100+ пользователей)
+  → [erp-performance.ru](https://erp-performance.ru/project-performance/about-pp/)
 
 ## 📝 **Публикации**  
-UinC.ru, WASM.ru. Архив статей: [andrei-ag.github.io](https://andrei-ag.github.io/)
+UinC.ru, WASM.ru. Архив: [andrei-ag.github.io](https://andrei-ag.github.io/)
 
-### 📜 **Сертификаты**
-- **MCSE: SQL Server** (Microsoft Certified Solutions Expert)
-- **Certified 1C:Expert** (Technological issues, high‑load architecture)
+## 📜 **Сертификаты**
+- **MCSE: Data Management & Analytics** (Microsoft Certified Solutions Expert, 2017)
+- **MCSA: SQL Server 2012** (Microsoft Certified Solutions Associate, 2015)
+- **Certified 1C:Expert** (1C, Technological issues, high‑load architecture, 2011)
+- **Certified 1C:Platform V8 Specialist** (1C, Advanced platform internals, 2004)
 
-### 📫 Связаться
-
+## 📫 **Контакты**
 [![GitHub](https://img.shields.io/badge/GitHub-andrei--ag-181717?style=for-the-badge&logo=github)](https://github.com/andrei-ag)
-[![Email](https://img.shields.io/badge/Email-beautyonthefire%40.ru-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:beautyonthefire[@]mail.ru)
+![Email](https://img.shields.io/badge/Email-beautyonthefire%40.ru-D14836?style=for-the-badge&logo=gmail&logoColor=white)
