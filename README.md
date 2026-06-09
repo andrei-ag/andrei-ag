@@ -19,7 +19,7 @@
 - Работа с файлами, строками, CRC32
 → [github.com/andrei-ag/MaximusSL](https://github.com/andrei-ag/MaximusSL)
 
-### 🎯 **СУПРА** — Система Управления Приоритетами РАбот (2026 → now) **[личный проект]**
+### 🎯 **СУПРА** — Система Управления Приоритетами РАбот (2025 → now) **[личный проект]**
 
 Расширение для конфигураций на базе [1С:БСП](https://v8.1c.ru/tekhnologii/standartnye-biblioteki/1s-biblioteka-standartnykh-podsistem/). Режим совместимости: Версия 8.3.26
 
