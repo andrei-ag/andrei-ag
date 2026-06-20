@@ -52,6 +52,7 @@
   → [eawards.1c.ru](https://eawards.1c.ru/projects/sozdanie-centralizovannoy-sistemy-upravleniya-finansami-sbytovogo-segmenta-gruppy-kompaniy-t-plyus--59255/)
 - **Аналог MS Project Server на 1С** (оборонные предприятия, 100+ пользователей)
   → [erp-performance.ru](https://erp-performance.ru/project-performance/about-pp/)
+- Несколько лет руководил комплексным проектом с постоянным составом специалистов **25-30** (ТЭК, УУ+БУ+ЗУП+Биллинг)
 
 ## 📝 **Публикации**  
 UinC.ru, WASM.ru. Архив: [andrei-ag.github.io](https://andrei-ag.github.io/)
