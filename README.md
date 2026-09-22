@@ -31,6 +31,13 @@
 - Работа с файлами, строками, CRC32
 → [github.com/andrei-ag/MaximusSL](https://github.com/andrei-ag/MaximusSL)
 
+### 🩺 the Sweeper (2000) — Антивирус (TASM, ASM)
+- Эмулятор инструкций (~30 шт) — ограниченный набор команд для безопасного анализа кода без запуска мусора.
+- Анализ полиморфных расшифровщиков — поиск циклов расшифровки, отсеивание однобайтового мусора, определение размера зашифрованного кода.
+- Детектирование и лечение вирусов, в т.ч. полиморфных — One_Half, TMC, Natas, NYB и др.\
+→ [github.com/andrei-ag/sweeper](https://github.com/andrei-ag/sweeper)\
+→ Search 'the Sweeper' on [SAC.SK](https://www.sac.sk/search.php)
+
 ### 🎯 **СУПРА** — Система Управления Приоритетами РАбот (2025 → now) **[личный проект]**
 
 Расширение для конфигураций на базе [1С:БСП](https://v8.1c.ru/tekhnologii/standartnye-biblioteki/1s-biblioteka-standartnykh-podsistem/). Режим совместимости: Версия 8.3.26
